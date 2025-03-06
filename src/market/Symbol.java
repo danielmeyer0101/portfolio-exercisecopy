@@ -7,6 +7,7 @@ package market;
  */
 public enum Symbol {
     //TODO: Tilføj aktie ticker symboler (fx AAPL, GOOG osv)
+    AAPL,GOOG,HFDD
     ;
     public static boolean isValidSymbol(String symbol) {
         //TODO: Tjek om inputstrengen findes i de eksisterende symboler i enum'en
