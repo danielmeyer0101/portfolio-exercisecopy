@@ -12,6 +12,11 @@ public enum Symbol {
     public static boolean isValidSymbol(String symbol) {
         //TODO: Tjek om inputstrengen findes i de eksisterende symboler i enum'en
         //      Returner true hvis den eksistere ellers returner false
+        for (Symbol aktier : Symbol.values()) {
+            if (aktier.toString().equals(symbol)) {
+                return true;
+            }
+        }
         return false;
     }
 }
