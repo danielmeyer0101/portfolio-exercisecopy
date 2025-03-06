@@ -1,7 +1,12 @@
-package projectIdeas.stock.market;
+package market;
 
-class Ticker {
-    private Symbol symbol;
+/**
+ * Represents a ticker with a symbol and a current price.
+ * @author OSNB
+ * @version 1.0
+ */
+public class Ticker {
+    private final Symbol symbol;
     private double currentPrice;
 
     Ticker(Symbol symbol, double currentPrice) {
@@ -9,15 +14,12 @@ class Ticker {
         this.currentPrice = currentPrice;
     }
 
-    Symbol getSymbol() {
+    public Symbol getSymbol() {
         return symbol;
     }
 
-    void setSymbol(Symbol symbol) {
-        this.symbol = symbol;
-    }
 
-    double getCurrentPrice() {
+    public double getCurrentPrice() {
         return currentPrice;
     }
 
